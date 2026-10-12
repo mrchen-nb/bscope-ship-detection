@@ -1,0 +1,19 @@
+# ============================================================
+# 复现脚本包 · requirements
+# 训练平台（与论文 §6.1 完全一致）：
+#   AMD Instinct MI300X 192 GB 加速卡 / 8 核 CPU / 200 GB 内存
+#   预装 ROCm 7.2.3 驱动栈 + Python 3.11（conda/pyenv 均可）
+# 注意：ultralytics 版本已钉死为 8.4.121（论文所有主表数字出处），
+#       版本漂移会导致 val/test 绝对值 ±~6 mAP50-95 的系统性偏差。
+# ============================================================
+ultralytics==8.4.121
+torch==2.11.0
+# 说明：PyTorch 2.11.0 需安装 ROCm 构建（AMD 官方 wheel，非 CPU 版）。
+#       若官方 pip 索引未提供，请按 ROCm 文档配置
+#       pip install torch --index-url https://download.pytorch.org/whl/rocm7.2
+numpy>=1.24
+PyYAML>=6.0
+pandas>=2.0
+matplotlib>=3.7
+opencv-python>=4.8
+scipy>=1.10

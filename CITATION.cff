@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript."
+title: "Position-aware evaluation, DoG self-labeling and radar strip attention for ship detection in shore-based radar imagery"
+type: software
+authors:
+  - name: "Zehao Chen"
+  - name: "Yu Cao"
+repository-code: "https://github.com/mrchen-nb"
+license: MIT
