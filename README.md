@@ -17,7 +17,7 @@ src/
   rsa_module.py              Radar Strip Attention (RSA) module, full three-component form
   rsa_module_ablation.py     Ablation variants: strip-only, gating, stripconv, range-adaptive
   attention_modules.py      Competing attention baselines: SE / CBAM / ECA / CA / SSA
-  strippool_reference.py     Original Strip Pooling operator (Gao et al., CVPR 2021) used as
+  strippool_reference.py     Original Strip Pooling operator (Hou et al., CVPR 2020) used as
                              the direct same-carrier control for RSA-Strip
   rtdetr_train_rsa.py        Training entry point (RT-DETR-R50 carrier)
   fast_validate.py           Batch validation on a split, writes fast_validate_results_*.json
